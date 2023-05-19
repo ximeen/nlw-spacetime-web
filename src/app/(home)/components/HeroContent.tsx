@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import logoNlwSpaceTime from '../../../assets/logo.svg'
+import Link from 'next/link'
 
 export default function HeroContent() {
   return (
@@ -17,12 +18,12 @@ export default function HeroContent() {
           com o mundo!
         </p>
       </div>
-      <a
-        href=""
+      <Link
+        href="/memory/new"
         className="hover: inline-block rounded-full bg-green-500 px-5 py-3 font-alt text-sm uppercase leading-none text-black transition-shadow hover:shadow-md hover:shadow-green-700"
       >
         Cadastrar lembraça
-      </a>
+      </Link>
     </div>
   )
 }

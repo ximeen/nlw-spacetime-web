@@ -12,10 +12,15 @@ export default function Profile() {
         alt="Image profile"
         className="h-10 w-10 rounded-full"
       />
-      <span className="max-w-[140px] text-lg leading-snug">
+      <p className="text-lg leading-snug">
         {name}
-        <a href="block text-sm text-red-400 hover:text-red-500">Quero sair!</a>
-      </span>
+        <a
+          href="/api/auth/logout"
+          className="block w-fit cursor-pointer text-sm text-red-400 transition-colors hover:text-red-600"
+        >
+          Quero sair!
+        </a>
+      </p>
     </div>
   )
 }
